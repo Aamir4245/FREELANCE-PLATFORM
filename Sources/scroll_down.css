@@ -1,0 +1,43 @@
+body{
+    background-color: darkslategray;
+    margin-left: 630px;
+    margin-top: 300px;
+}
+
+#text{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-shadow: 8px 8px 2px black;
+}
+
+#body{
+    margin-top: 10px;
+    margin-left: 45px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    display:flex;
+    height: 60px;
+    width: 21px;
+}
+
+#wheel{
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    animation: down 2s linear infinite;
+}
+
+@keyframes down {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}

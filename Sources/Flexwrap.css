@@ -1,0 +1,40 @@
+body{
+    background-image: linear-gradient(to right , lightgreen ,lightblue);
+}
+
+#container{
+    background-color: blanchedalmond;
+    max-height: fit-content;
+    max-width: 100%;
+}
+
+#container #items{
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container #items li{
+    height: 100%;
+    width: auto;
+    background-color: aqua;
+    padding: 10px;
+    margin-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid black;
+    flex: 1 1 100px;
+    justify-content: space-between;
+}
+
+#container #name{
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 50px;
+    background-image: linear-gradient(to right,pink,lightblue);
+}

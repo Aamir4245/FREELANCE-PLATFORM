@@ -1,0 +1,130 @@
+body{
+    background-color: darksalmon;
+}
+
+#container{
+    background-color: white;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    bottom: 50%;
+    overflow: hidden;
+    animation: moveshadow 15s infinite ;
+}
+
+
+#container #sun{
+    position:absolute;
+    top: 34%;
+    left: 34%;
+    background-color: gold;
+    border-radius: 50%;    
+    height: 30%;
+    width: 30%; 
+    animation: mcolor 15s infinite;   
+}
+
+#container #sun #shadow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: moon 15s infinite;
+    transform: translate(-50px,-50px);
+}
+
+
+@keyframes moveshadow{
+    0%{
+
+        background-color: white;
+    }
+    20%{
+        background-color: darkgray;
+    }
+    40%{
+        background-color: rgb(42, 42, 42);
+    }
+    50%{
+        background-color: black;
+    }
+    55%{
+        background-color: black;
+    }
+    60%{
+        background-color: rgb(42, 42, 42);
+    }
+    80%{
+        background-color: darkgray;
+    }
+    100%{
+        
+        background-color: white;
+    }
+}
+
+@keyframes moon{
+    0%{
+        background-color: white;
+        transform: translate(-50px,-50px);
+    }
+    20%{
+        background-color: darkgray;
+    }
+    40%{
+        background-color: rgb(42, 42, 42);
+        transform: translate(-5px,-5px);
+    }
+    50%{
+        background-color: black;
+        transform: translate(-2px,-2px);
+    }
+    55%{
+        background-color: black;
+        transform: translate(2px,-2px);
+    }
+    60%{
+        background-color: rgb(42, 42, 42);
+        transform: translate(5px,-5px);
+    }
+    80%{
+        background-color: darkgray;
+    }
+    100%{
+        background-color: white;
+        transform: translate(50px,-50px);
+
+    }
+}
+
+@keyframes mcolor{
+    0%{
+
+        background-color: gold;
+    }
+    20%{
+        background-color:rgb(255, 225, 54);
+    }
+    40%{
+        background-color:rgb(255, 234, 114);
+    }
+    50%{
+        background-color: rgb(255, 247, 198);
+    }
+    55%{
+        background-color:white;
+    }
+    60%{
+        background-color: rgb(255, 247, 198);
+    }
+    80%{
+        background-color: rgb(255, 234, 114);
+    }
+    100%{
+        
+        background-color:gold;
+    }
+}

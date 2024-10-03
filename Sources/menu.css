@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(121, 125, 78);
+}
+
+#title{
+    border: 2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width:200px;
+    height: 50px;
+    background-color: rgb(159, 95, 0);
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.dropdown{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 4px;
+    position: absolute;
+    width: 200px;
+}
+
+.dropdown li{
+
+    list-style-type: none;
+    display: none;
+    opacity: 0;
+    background-color: antiquewhite;
+}
+
+.dropdown li:hover{
+    cursor:pointer;
+    background-color: rgb(184, 127, 43);
+}
+
+#title:hover .dropdown li{
+    display: block;
+    animation: animate 1s forwards;
+}
+.dropdown li a{
+    font-size:20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.dropdown li a:hover{
+    font-size:22px;
+}
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+
+#title:hover .dropdown li:nth-child(1){
+    animation-delay: .2s;
+}
+
+#title:hover .dropdown li:nth-child(2){
+    animation-delay: .3s;
+}
+
+#title:hover .dropdown li:nth-child(3){
+    animation-delay: .4s;
+}
+
+#title:hover .dropdown li:nth-child(4){
+    animation-delay: .5s;
+}
+
+#title:hover .dropdown li:nth-child(5){
+    animation-delay: .6s;
+}

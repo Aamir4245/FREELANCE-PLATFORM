@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(to right ,lightcyan,lightpink);
+    padding-top:20%;
+    padding-left:40%;
+}
+
+#Onclick{
+    display: none;
+}
+
+.btn{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right ,teal,deeppink);
+    height: fit-content;
+    width: fit-content;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:50px;
+    line-height: 50px;
+    box-shadow: 8px 8px 2px #123456;
+}
+
+.btn a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.653);
+}
+.btn:hover{
+    background-color:gray;
+}
+.btn:active{
+    box-shadow: 6px 5px 2px #123456;
+}
+.btn:hover a{
+    color: rgb(255, 206, 133);
+}
+
+
+#Onclick:checked + label{
+    width: fit-content;
+    height: fit-content;
+}
